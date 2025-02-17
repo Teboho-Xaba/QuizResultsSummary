@@ -1,0 +1,75 @@
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk:500,700,800);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  width: 680px;
+  min-height: 80dvh;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: hsl(224, 30%, 27%);
+  border-radius: 40px;
+}
+.overall {
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+.overall h3 {
+  color: hsl(241, 100%, 89%);
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(360deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 50%;
+}
+.overall .score h1 {
+  font-size: 52px;
+}
+
+.overall p {
+  margin-top: -2rem;
+  text-align: center;
+  padding: 24px;
+  color: hsl(241, 100%, 89%);
+}
+
+/*Details*/
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(221, 100%, 96%);
+  padding: 32px;
+}
+.results span {
+  display: flex;
+}
+span {
+  justify-content: space-between;
+  align-items: center;
+}
