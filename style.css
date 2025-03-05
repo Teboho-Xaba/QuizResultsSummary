@@ -7,69 +7,141 @@
 }
 
 body {
-  background: #fff;
+  font-family: "Hanken Grotesk", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100dvh;
 }
 
 .container {
-  width: 680px;
-  min-height: 80dvh;
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  color: hsl(224, 30%, 27%);
-  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 60%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
 .overall {
   background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px;
+  padding: 40px;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
 }
 .overall h3 {
   color: hsl(241, 100%, 89%);
+  font-weight: 300;
+  margin-bottom: 8px;
 }
 .score {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  width: 200px;
+  text-align: center;
+  padding: 20px;
+  margin: 32px 0;
   background: linear-gradient(360deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 50%;
 }
-.overall .score h1 {
+.overall .score h1,
+.overall h1 {
   font-size: 52px;
+  font-weight: 700;
+  margin: 20px;
 }
 
 .overall p {
-  margin-top: -2rem;
-  text-align: center;
-  padding: 24px;
   color: hsl(241, 100%, 89%);
+  font-weight: thin;
 }
 
 /*Details*/
 .details {
+  padding: 40px;
+  height: 100%;
+}
+
+.details h3 {
+  color: hsl(224, 30%, 27%);
+}
+
+.details div {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: hsl(221, 100%, 96%);
-  padding: 32px;
+  margin: 12px 0;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
 }
-.results span {
-  display: flex;
+
+strong {
+  font-weight: bolder;
+  margin-left: 20px;
 }
-span {
-  justify-content: space-between;
-  align-items: center;
+
+.num1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.num1 span:nth-child(2) {
+  color: hsl(224, 30%, 27%);
+}
+
+.num2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.num2 span:nth-child(2) {
+  color: hsl(224, 30%, 27%);
+}
+
+.num3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.num3 span:nth-child(2) {
+  color: hsl(224, 30%, 27%);
+}
+
+.num4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.num4 span:nth-child(2) {
+  color: hsl(224, 30%, 27%);
+}
+
+.details img {
+  margin-right: 4px;
+}
+
+button {
+  width: 100%;
+  background: hsl(224, 30%, 27%);
+  color: #fff;
+  font-weight: thin;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+button:hover {
+  color: hsl(224, 30%, 27%);
+  border: 1px solid hsl(224, 30%, 27%);
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
